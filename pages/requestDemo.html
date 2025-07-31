@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EZ Store</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/requestDemo.css" />
+    <style>
+      nav .container .links {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- start nav -->
+    <nav style="width: 100%">
+      <div class="container">
+        <div class="logo">
+          <a href="../index.html"
+            ><img src="../images/EZ_Store_Logo_Transparent.png" alt=""
+          /></a>
+        </div>
+        <div class="links">
+          <ul>
+            <a href="contactUs.html"><li>contact us</li></a>
+            <a href="pricing.html"><li>pricing</li></a>
+            <a href="requestDemo.html"><li>request demo</li></a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end nav -->
+    <!-- start request demo -->
+    <div class="container">
+      <div class="request-demo">
+        <div class="about">
+          <p>Cell Phone Store POS, Made Easy</p>
+          <h1>#1 Phone Store Software</h1>
+          <p>
+            Discover how EZ Store POS system can level-up your cell phone store
+            operations. CellSmart boosts sales and enhances customer
+            satisfaction with features custom to cell phone stores. Schedule
+            your personalized demo today:
+          </p>
+          <div class="info">
+            <div class="box">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                Access to our state-of-the-art software in a demo environment.
+              </p>
+            </div>
+            <div class="box">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                Expert guidance to help you navigate your business processes
+                more efficiently.
+              </p>
+            </div>
+            <div class="box">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                Customized recommendations for improving your employee and
+                customer experience.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="request-demo-form">
+          <form>
+            <div class="full-name">
+              <label>
+                first name*
+                <input type="text" required />
+              </label>
+              <label>
+                last name*
+                <input type="text" required />
+              </label>
+            </div>
+            <div class="business-name">
+              <label>
+                business name*
+                <input type="text" />
+              </label>
+            </div>
+            <div class="email">
+              <label>
+                email*
+                <input
+                  type="email"
+                  placeholder="e.g. you@example.com"
+                  required
+                />
+              </label>
+            </div>
+            <div class="phone">
+              <label>phone number*</label>
+              <select id="country" name="country">
+                <option value="" disabled>Select a country</option>
+                <option value="us" selected>United States</option>
+                <option value="ca">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="au">Australia</option>
+                <option value="de">Germany</option>
+                <option value="fr">France</option>
+                <option value="it">Italy</option>
+                <option value="jp">Japan</option>
+                <option value="cn">China</option>
+                <option value="in">India</option>
+                <option value="br">Brazil</option>
+                <option value="za">South Africa</option>
+                <option value="ng">Nigeria</option>
+              </select>
+              <input
+                type="tel"
+                placeholder="e.g. 1234567890"
+                pattern="[0-9]{10}"
+              />
+            </div>
+            <div class="term-and-conditions">
+              <p>
+                By entering your phone number and opting in, you agree to
+                receive text messages from CellSmart POS with news, updates, and
+                promotions. Reply 'STOP' to any message to unsubscribe.
+              </p>
+              <label>
+                <input type="checkbox" checked />
+                Stay in the loop with SMS updates
+              </label>
+            </div>
+            <input class="submit" type="button" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- end request demo -->
+  </body>
+</html>

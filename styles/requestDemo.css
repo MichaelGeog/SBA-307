@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #d9dcd6;
+}
+input:focus {
+    outline: none;
+}
+/* start global rules */
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+/* start request demo */
+.container{
+    margin: auto;
+}
+.container .request-demo{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+@media (max-width: 991px) {
+    .container .request-demo{
+        padding: 50px 20px;
+        flex-flow: column;
+        gap: 30px;
+    }
+}
+.container .request-demo .about {
+    width: 40%;
+}
+@media (max-width: 991px) {
+    .container .request-demo .about {
+        width: 100%;
+    }
+}
+.container .request-demo .about h1{
+    font-size: 60px;
+    margin: 20px 0;
+}
+.container .request-demo .about p:last-of-type{
+    margin-bottom: 20px;
+}
+.container .request-demo .about .info .box{
+    display: flex;
+}
+.container .request-demo .about .info .box:not(:last-child){
+    margin-bottom: 10px;
+}
+.container .request-demo .about .info .box i {
+    margin-right: 10px;
+    font-size: 30px;
+    color: #3a7ca5;
+}
+.container .request-demo .about .info .box p {
+    font-size: 20px;
+}
+.container .request-demo .request-demo-form {
+    width: 40%;
+    color: white;
+}
+@media (max-width: 991px) {
+    .container .request-demo .request-demo-form {
+        width: 100%;
+        color: white;
+    }
+}
+.container .request-demo .request-demo-form form{
+    width: 100%;
+    background-color: #3a7ca5;
+    padding: 50px 40px;
+    border-radius: 10px;
+}
+.container .request-demo .request-demo-form form .full-name{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+@media (max-width: 480px) {
+    .container .request-demo .request-demo-form form .full-name{
+        flex-flow: column;
+        gap: 20px;
+    }
+}
+.container .request-demo .request-demo-form form .full-name label{
+    display: flex;
+    flex-flow: column;
+    width: 45%;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+@media (max-width: 480px) {
+    .container .request-demo .request-demo-form form .full-name label{
+        width: 100%;
+    }
+}
+.container .request-demo .request-demo-form form .full-name label input{
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+.container .request-demo .request-demo-form form .business-name {
+    margin: 20px 0;
+}
+.container .request-demo .request-demo-form form .business-name label{
+    display: flex;
+    flex-flow: column;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.container .request-demo .request-demo-form form .business-name label input{
+    padding: 15px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.container .request-demo .request-demo-form form .email{
+    margin: 20px 0;
+}
+.container .request-demo .request-demo-form form .email label{
+    display: flex;
+    flex-flow: column;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.container .request-demo .request-demo-form form .email label input{
+    padding: 15px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.container .request-demo .request-demo-form form .phone{
+    display: flex;
+    flex-flow: column;
+}
+.container .request-demo .request-demo-form form .phone label{
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.container .request-demo .request-demo-form form .phone select{
+    padding: 15px 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.container .request-demo .request-demo-form form .phone input{
+    padding: 15px 10px;
+    border: none;
+    border-radius: 5px;
+}
+.container .request-demo .request-demo-form form .term-and-conditions{
+    margin: 20px 0;
+}
+.container .request-demo .request-demo-form form .term-and-conditions p{
+    font-size: 15px;
+    margin: 10px 0;
+}
+.container .request-demo .request-demo-form form .term-and-conditions label{
+    cursor: pointer;
+    font-size: 20px;
+}
+.container .request-demo .request-demo-form form .submit{
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 10px;
+    border: 0;
+    background-color: #2f6690;
+    color: white;
+    cursor: pointer;
+}
+.container .request-demo .request-demo-form form .submit:hover{
+    background-color: #184e77;
+}
+/* end request demo */

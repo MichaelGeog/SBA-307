@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #d9dcd6;
+}
+input:focus {
+    outline: none;
+}
+/* start global rules */
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+/* start pricing */
+.container{
+    margin: auto;
+}
+.container .prices{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    align-items: center;
+    padding: 100px 20px;
+}
+@media (max-width: 768px) {
+    .container .prices{
+        padding: 80px 20px;
+    }
+}
+@media (max-width: 480px) {
+    .container .prices{
+        padding: 60px 20px;
+    }
+}
+.container .prices h1{
+    font-size: 80px;
+    margin-bottom: 60px;
+}
+@media (max-width: 768px) {
+    .container .prices h1{
+        font-size: 60px;
+    }
+}
+@media (max-width: 480px) {
+    .container .prices h1{
+        font-size: 40px;
+    }
+}
+.container .prices .plans-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
+    position: relative;
+}
+@media (max-width: 991px) {
+    .container .prices .plans-box{
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+    }
+}
+.container .prices .plans-box .plan {
+    padding: 40px 20px;
+    background-color: #3a7ca5;
+    flex: 1;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+}
+@media (max-width: 991px) {
+    .container .prices .plans-box .plan {
+        margin-bottom: 40px;
+    }
+}
+.container .prices .plans-box .plan::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #16425b;
+    display: block;
+    position: absolute;
+    right: -10px;
+    top: 10px;
+    z-index: -1;
+    border-radius: 10px;
+}
+.container .prices .plans-box .plan:nth-child(2) {
+    outline: 5px solid #81c3d7;
+    top: -30px;
+    position: relative;
+}
+@media (max-width: 991px) {
+    .container .prices .plans-box .plan:nth-child(2) {
+        outline: 5px solid #81c3d7;
+        top: 0;
+        position: relative;
+    }
+}
+.container .prices .plans-box .plan:nth-child(2)::before {
+    content: "most popular";
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    border-radius: 20px;
+    text-transform: capitalize;
+    background-color: #81c3d7;
+    font-size: 14px;
+    padding: 3px;
+    display: block;
+    position: absolute;
+    top: -15px;
+}
+.container .prices .plans-box .plan:nth-child(2)::after {
+    right: -15px;
+    top: 15px;
+}
+.container .prices .plans-box .plan h3{
+    font-size: 30px;
+}
+.container .prices .plans-box .plan h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.container .prices .plans-box .plan .links{
+    display: flex;
+    flex-flow: column;
+}
+.container .prices .plans-box .plan .links button{
+    padding: 15px 0;
+    text-transform: capitalize;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.container .prices .plans-box .plan .links button:first-child{
+    border: 1px solid #2f6690;
+    color: #2f6690;
+}
+.container .prices .plans-box .plan .links button:first-child:hover{
+    border: 1px solid #184e77;
+    background-color: #184e77;
+    color: white;
+}
+.container .prices .plans-box .plan .links button:last-child{
+    color: white;
+    border: 1px solid #2f6690;
+    background-color: #2f6690;
+}
+.container .prices .plans-box .plan .links button:last-child:hover{
+    border: 1px solid #184e77;
+    background-color: #184e77;
+}
+.container .prices .plans-box .plan table {
+    width: 100%;
+}
+.container .prices .plans-box .plan table tbody tr{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid white;
+}
+/* end pricing */
