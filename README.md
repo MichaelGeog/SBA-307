@@ -1,7 +1,4 @@
-# This is a practice project as part of per scholas program
-
-Welcome to **EZ Store POS**, a multi-page responsive website showcasing a point-of-sale solution for mobile repair shops. This project demonstrates the use of modern HTML and CSS practices across several pages.
-
+# Welcome to **EZ Store POS**, a multi-page responsive website showcasing a point-of-sale solution for mobile repair shops. This project demonstrates the use of modern HTML and CSS practices across several pages.
 
 ## 📁 Pages Included
 
